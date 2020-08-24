@@ -21,7 +21,7 @@ app.use(express.static("public"));
 
 
 app.get("/", function (req, res) {
-    res.redirect("/index.html")
+    res.sendFile("/index.html")
 })
 
 // parse data from form after using app use and installing body parser
